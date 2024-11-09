@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+course-card.is-first{
+    border-top: 2 px solid grey;
+    padding-top: 20 px;
+    color:red;
+}
+
+course-card.is-last{    
+    border-bottom: 2 px solid grey;
+    padding-top: 20 px;
+    color:pink;
+}
+
+course-card.is-even{
+    background: lightblue;
+}
+
+course-card.is-odd{
+    background: lightgreen;
+}

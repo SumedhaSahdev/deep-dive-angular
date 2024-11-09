@@ -1,0 +1,28 @@
+<div class="course-card" *ngIf="course" [ngClass]="cardClasses()">
+
+    <img [src]="course.iconUrl" width="200px" class="center">
+
+    <div class="course-title" [ngStyle]="cardStyles()">
+       {{ cardIndex + ' ' + course.description}}
+    </div>
+
+    <ng-content></ng-content>
+    <!-- @if(course.id==1){
+        <h2>Course with ID 1 detected!</h2>
+    }
+    @else if(course.iconUrl){
+        <img [src]="course.iconUrl" alt="Angular logo" width="300">
+    }
+    @else {
+        <h2>No image available</h2>
+    } -->
+
+    <img width="300" alt="Angular logo" *ngIf="true" [src="course.iconUrl"]>
+
+    <div class="course-description" style="text-align: center; font-style: italic;">
+        {{ course.longDescription }}
+    </div>
+
+    <button (click)="onCourseViewed()">View Course</button>
+</div>
+

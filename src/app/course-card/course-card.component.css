@@ -1,0 +1,7 @@
+.course-card{
+    text-align: center;
+}
+
+.course-card.beginner{
+    background: pink;
+}
